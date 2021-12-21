@@ -1,0 +1,7 @@
+{
+  "name": "Vaccako",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
