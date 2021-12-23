@@ -1,0 +1,61 @@
+ion-content{
+    --ion-background-color: rgb(208, 243, 220);
+
+    .menu-bg{
+        height: 160px;
+        width: 110%;
+        background: linear-gradient(-60deg, rgba(41, 121, 37) 0%, rgb(76, 214, 58) 50%, rgb(115, 231, 115) 100%);
+        transform: rotate(-10deg);
+        border-radius: 15px 15px 75px 50px;
+        margin-left: -10px;
+        margin-top: -50px;
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+    }
+    .image{
+      width: 100%;
+      margin-top: -75px;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      img{
+        height: 150px;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+    }
+    ion-list{
+      background: transparent !important;
+      margin-top: 100px;
+      
+      ion-item{
+          width: 80%;
+          margin: 0px auto;
+          --background: transparent;
+          transition: all 0.5s ease-in-out;
+          margin-bottom: 20px;
+          width: 90%;
+          box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+          border-radius: 25px;
+
+          ion-icon{
+            color: rgb(38, 58, 38);
+            outline: none;
+            pointer-events: none;
+          }
+          ion-label{
+            left: 50px;
+            position: absolute;
+            transition: all 0.5s ease-in-out;
+            color: rgb(78, 76, 76);
+        }
+      }
+      ion-item:hover{
+        --background: rgba(115, 231, 115);
+
+        ion-label{
+          transform: translateX(20px);
+          color: rgb(78, 76, 76, 0.7);
+        }
+      }
+    }
+  }

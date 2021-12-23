@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAA;EACP,sBAAsB,CAAA,IAAC;CAC1B",
+    "sources": [
+        "survey.page.scss"
+    ],
+    "names": [],
+    "file": "survey.page.css"
+}

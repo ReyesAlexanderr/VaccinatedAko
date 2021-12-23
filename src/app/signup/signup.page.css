@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ion-toolbar {
+  --background: rgb(8, 88, 44);
+}
+
+ion-content {
+  --ion-background-color: rgb(236, 248, 236);
+  height: 100vh;
+}
+
+ion-content ion-card {
+  --background: linear-gradient(to top, #1d9236, #5aaf6c, #66aa75);
+  border-radius: 0 0 15px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+ion-content ion-card img {
+  height: 170px;
+  width: 170px;
+  border-radius: 50%;
+  -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+          box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+ion-content .box-login {
+  height: 70vh;
+  width: 100%;
+  max-width: 600px;
+  background: #d0f3dc;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  border-radius: 50px 50px 0 0;
+  color: #000;
+  -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+ion-content .box-login ion-list {
+  background: transparent !important;
+  margin-top: 10px;
+}
+
+ion-content .box-login ion-list ion-item {
+  width: 80%;
+  margin: 0px auto;
+  --background: transparent;
+  border-bottom: 1px solid #116811;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+ion-content .box-login ion-list ion-item ion-label {
+  left: 0;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+ion-content .box-login ion-list ion-item ion-input {
+  font-size: 0.9rem;
+  --padding-start: 5px;
+  --padding-top: 35px;
+  color: #16793c;
+}
+
+ion-content .box-login ion-list ion-item:hover {
+  border-bottom: 2px solid rgba(17, 104, 17, 0.3);
+}
+
+ion-content .box-login .button {
+  width: 90%;
+  margin: 40px auto;
+}
+
+ion-content .box-login .button ion-button {
+  width: 100%;
+}
+
+ion-content .box-login a {
+  color: #1d9236;
+}
+
+ion-content .box-login p {
+  width: 90%;
+  margin: 50px auto;
+}
+/*# sourceMappingURL=signup.page.css.map */

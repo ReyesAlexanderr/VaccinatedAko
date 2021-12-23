@@ -1,20 +1,55 @@
-<ion-header [translucent]="true">
+
   <ion-toolbar>
     <ion-title>
-      Blank
+      Home
     </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+    <div class="logout">
+      <ion-button (click)="logOut()" shape="round" color="success">Log out</ion-button>
+      </div>
   </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+
+<ion-content>
+  <ion-card>
+    <h2>How to Prevent COVID-19</h2>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="4">
+          <img src="assets/images/washhand.jpg">
+          <p>Wash Your Hands</p>
+        </ion-col>
+        <ion-col size="4">
+          <img src="assets/images/distance.jpg">
+          <p>Social Distance</p>
+        </ion-col>
+        <ion-col size="4">
+          <img src="assets/images/handshake.jpg">
+          <p>Avoid Hand shake</p>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+          <img src="assets/images/healthy.jpg">
+          <p>Eat Healthy Food</p>
+        </ion-col>
+        <ion-col size="4">
+          <img src="assets/images/places.jpg">
+          <p>Avoid Crowded Places</p>
+        </ion-col>
+        <ion-col size="4">
+          <img src="assets/images/vaccine.jpg">
+          <p>Take Vaccine</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <div class="fillup">
+    <ion-card-title>TAKE THE SURVEY FORM?</ion-card-title>
+    <ion-button fill="none" shape="round" routerLink="/survey">Start Survey<ion-icon name="arrow-forward-sharp"></ion-icon></ion-button>
   </div>
 </ion-content>

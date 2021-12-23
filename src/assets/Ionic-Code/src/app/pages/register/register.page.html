@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>REGISTRATION</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="head">
+    <ion-card>
+      <img src="assets/images/icon-logo.png" />
+    </ion-card>
+  </div>
+
+  <div class="box-login">
+    <form method="post">
+      <ion-list>
+        <ion-item lines="none">
+          <ion-label position="floating">Full Name</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label position="floating">Username</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+  
+        <ion-item lines="none">
+          <ion-label position="floating">Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+        <ion-item lines="none">
+          <ion-label position="floating"> Confirm Password</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+  
+        <div class="button">
+          <ion-button expand="block" shape="round" color="success" routerLink='/login'>Register</ion-button>
+        </div>
+        <div class="button-reg">
+          <a routerLink="/reset">Forgot Password?</a>
+          <hr>
+          <p>Already have an Account?<a routerLink='/login'> Login</a></p>
+        </div>
+      </ion-list>
+    </form>
+  </div>
+</ion-content>
+

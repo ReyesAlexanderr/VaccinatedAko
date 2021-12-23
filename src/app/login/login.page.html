@@ -1,0 +1,62 @@
+ <ion-toolbar>
+    <ion-title>Log In</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+
+<ion-content>
+  <div class="head">
+    <ion-card>
+      <img src="assets/images/icon-logo.png" />
+    </ion-card>
+  </div>
+
+  <div class="box-login">
+    <form #form="ngForm" (ngSubmit)="loginUser(form)"> 
+      <ion-list>
+        <ion-item lines="none">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input  name="email" type="email" ngModel required></ion-input>
+        </ion-item>
+  
+        <ion-item lines="none">
+          <ion-label position="floating">Password</ion-label>
+          <ion-input  name="password" type="password" ngModel required></ion-input>
+        </ion-item>
+  
+        <div class="button">
+          <ion-button expand="block" shape="round" color="success" type="submit" [disabled]="form.invalid">Login</ion-button>
+        </div>
+
+        <div style="text-align: center; margin: 20px auto;">
+          <a (click)="goToReset()" style="color: rgb(17, 104, 17);">Forget Password?</a>
+          <p>Do not have an Account?<a (click)="goTosignUp()" style="color: rgb(17, 104, 17);"> Register here</a></p>
+          </div>
+      </ion-list>
+      
+    </form>
+
+  </div>
+</ion-content>
+
+
+  <!--<form #form="ngForm" (ngSubmit)="loginUser(form)">
+  <div>
+    <ion-item>
+      <ion-input  name="email" type="email" placeholder="your@email" ngModel required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input  name="password" type="password" placeholder="password" ngModel required></ion-input>
+    </ion-item>
+  </div>
+  <div style="text-align: center;margin: auto;">
+    <ion-button type="submit" [disabled]="form.invalid">Sign In</ion-button>
+    </div>
+</form>
+<div style="text-align: center; margin: auto;">
+<h6 (click)="goToReset()">Forget Password?</h6>
+<h6 (click)="goTosignUp()">Sign Up</h6>
+</div>-->
+

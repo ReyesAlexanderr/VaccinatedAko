@@ -1,0 +1,22 @@
+<ion-toolbar>
+  <ion-title>VaccinatedAko</ion-title>
+  <ion-buttons slot="start">
+    <ion-menu-button menu="main-menu"></ion-menu-button>
+  </ion-buttons>
+</ion-toolbar>
+
+<ion-content [fullscreen]="true">
+  <div class="logo">
+    <img src="assets/images/icon-logo.png">
+  </div>
+  <div class="con-body">
+    <ion-card-header>
+      <h2>VaccinatedAko</h2>
+      <ion-card-subtitle>A COVID-19 Vaccination Survey Form</ion-card-subtitle>
+    </ion-card-header>
+  </div>
+  <div class="btn">
+    <ion-button expand="block" size="5" shape="round" fill="outline" routerLink="/login">Login</ion-button>
+    <ion-button expand="block" color="success" size="5" shape="round" routerLink="/register">Sign Up</ion-button>
+  </div>
+</ion-content>

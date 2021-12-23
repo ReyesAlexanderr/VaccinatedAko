@@ -1,0 +1,68 @@
+ion-toolbar{
+    --background: rgb(28, 151, 58);
+    height: 70px;
+  
+    ion-title{
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    ion-menu-button{
+      margin-top: 17px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      --color: rgb(208, 243, 220);
+      border-radius: 5px;
+    }
+  }
+  
+  ion-content{
+    --ion-background-color: rgb(208, 243, 220, 0.8);
+
+    .box{
+        
+        width: 95%;
+        margin: 20px auto;
+        border-radius: 10px;
+        ion-accordion-group{
+            
+            ion-accordion{
+                border-radius: 20px;
+            }
+            ion-item{
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+                border-radius: 20px 0 0 20px;
+                width: 100%;
+                margin: 0;
+                padding: 0;    
+                --background: rgb(154, 180, 154);
+        
+                ion-label{
+                    color: rgba(0, 0, 0, 0.8);
+                    font-size: 14px;
+
+                    p{
+                        color: rgba(0, 0, 0, 0.8);
+                        font-size: 14px;   
+                    }
+                }
+            }
+            ion-list{
+                padding: 15px;
+                border-radius: 20px 0 0 20px;
+                background: rgb(154, 180, 154, 0.7);
+
+                ion-label{
+                    text-align: justify;
+                    font-size: 13px;
+                    color: rgba(70, 65, 65, 0.8);
+
+                    p{
+                        margin-top: 5px;
+                        font-size: 13px;
+                        color: rgba(70, 65, 65, 0.8);
+                    }
+                }
+            }
+    
+        }
+    }
+  }
